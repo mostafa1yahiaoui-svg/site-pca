@@ -1,0 +1,9 @@
+SITE VITRINE PCA — VERSION AVEC LOGO
+
+1. Décompressez le fichier ZIP dans un dossier.
+2. Ouvrez le dossier site_vitrine_PCA.
+3. Double-cliquez sur index.html pour afficher le site dans votre navigateur.
+
+Le logo PCA est dans assets/logo-pca.png.
+Le site est une vitrine statique : aucun serveur, compte utilisateur ou base de données n'est nécessaire.
+Les liens officiels de téléchargement et de contact restent à configurer avant publication en ligne.
