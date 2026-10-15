@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -7,15 +8,22 @@
   <title>PCA — Plan Communal d’Adressage</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="site-header">
     <a class="brand" href="#accueil" aria-label="Accueil PCA">
       <img src="logo-pca.png" alt="Logo PCA — Plan Communal d’Adressage">
-      <span class="brand-text"><strong>PCA</strong><small>Plan Communal d’Adressage</small></span>
+      <span class="brand-text">
+        <strong>PCA</strong>
+        <small>Plan Communal d’Adressage</small>
+      </span>
     </a>
+
     <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
     <nav class="nav">
       <a href="#accueil" data-fr="Accueil" data-ar="الرئيسية">Accueil</a>
+      <a href="#presentation" data-fr="Présentation" data-ar="تقديم المشروع">Présentation</a>
       <a href="#fonctionnalites" data-fr="Fonctionnalités" data-ar="الميزات">Fonctionnalités</a>
       <a href="#demarche" data-fr="Démarche" data-ar="المنهجية">Démarche</a>
       <a href="#ressources" data-fr="Ressources" data-ar="الموارد">Ressources</a>
@@ -24,57 +32,295 @@
   </header>
 
   <main>
+    <!-- ACCUEIL -->
     <section class="hero" id="accueil">
       <div class="hero-content">
-        <p class="eyebrow" data-fr="Cartographie • Organisation • Adressage" data-ar="الخرائط • التنظيم • العنونة">Cartographie • Organisation • Adressage</p>
-        <h1 data-fr="Une commune mieux organisée commence par une adresse claire." data-ar="بلدية منظمة تبدأ بعنوان واضح.">Une commune mieux organisée commence par une adresse claire.</h1>
-        <p class="lead" data-fr="Le Plan Communal d’Adressage (PCA) accompagne les communes dans la structuration des voies, la localisation des bâtiments et la gestion de leurs données cartographiques." data-ar="يساعد المخطط البلدي للعنونة البلديات على تنظيم الطرق وتحديد مواقع المباني وإدارة البيانات الخرائطية.">Le Plan Communal d’Adressage (PCA) accompagne les communes dans la structuration des voies, la localisation des bâtiments et la gestion de leurs données cartographiques.</p>
+        <p class="eyebrow"
+           data-fr="Cartographie • Organisation • Adressage"
+           data-ar="الخرائط • التنظيم • العنونة">
+          Cartographie • Organisation • Adressage
+        </p>
+
+        <h1
+          data-fr="Une commune mieux organisée commence par une adresse claire."
+          data-ar="بلدية منظمة تبدأ بعنوان واضح.">
+          Une commune mieux organisée commence par une adresse claire.
+        </h1>
+
+        <p class="lead"
+           data-fr="Le Plan Communal d’Adressage (PCA) accompagne les communes dans la structuration des voies, la localisation des bâtiments et la gestion de leurs données cartographiques."
+           data-ar="يساعد المخطط البلدي للعنونة البلديات على تنظيم الطرق وتحديد مواقع المباني وإدارة البيانات الخرائطية.">
+          Le Plan Communal d’Adressage (PCA) accompagne les communes dans la structuration des voies, la localisation des bâtiments et la gestion de leurs données cartographiques.
+        </p>
+
         <div class="hero-actions">
-          <a class="button primary" href="#fonctionnalites" data-fr="Découvrir le PCA" data-ar="اكتشف المخطط">Découvrir le PCA</a>
-          <a class="button secondary" href="#demarche" data-fr="Voir la démarche" data-ar="عرض المنهجية">Voir la démarche</a>
+          <a class="button primary" href="#fonctionnalites"
+             data-fr="Découvrir le PCA" data-ar="اكتشف المخطط">
+            Découvrir le PCA
+          </a>
+
+          <a class="button secondary" href="#demarche"
+             data-fr="Voir la démarche" data-ar="عرض المنهجية">
+            Voir la démarche
+          </a>
         </div>
       </div>
+
       <div class="map-panel" aria-label="Illustration cartographique">
         <div class="map-grid"></div>
-        <div class="road road-one"></div><div class="road road-two"></div><div class="road road-three"></div>
-        <div class="map-pin pin-one">●</div><div class="map-pin pin-two">●</div><div class="map-pin pin-three">●</div>
-        <div class="map-label label-one">Voie 01</div><div class="map-label label-two">Secteur A</div>
-        <div class="map-card"><span class="card-dot"></span><div><strong data-fr="Données territoriales" data-ar="البيانات الإقليمية">Données territoriales</strong><small data-fr="Structurées et localisées" data-ar="منظمة ومحددة الموقع">Structurées et localisées</small></div></div>
+        <div class="road road-one"></div>
+        <div class="road road-two"></div>
+        <div class="road road-three"></div>
+
+        <div class="map-pin pin-one">●</div>
+        <div class="map-pin pin-two">●</div>
+        <div class="map-pin pin-three">●</div>
+
+        <div class="map-label label-one">Voie 01</div>
+        <div class="map-label label-two">Secteur A</div>
+
+        <div class="map-card">
+          <span class="card-dot"></span>
+          <div>
+            <strong data-fr="Données territoriales" data-ar="البيانات الإقليمية">Données territoriales</strong>
+            <small data-fr="Structurées et localisées" data-ar="منظمة ومحددة الموقع">Structurées et localisées</small>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- PRESENTATION DU PROJET -->
+    <section class="section presentation" id="presentation">
+      <div class="section-heading">
+        <p class="eyebrow"
+           data-fr="Présentation du projet"
+           data-ar="تقديم المشروع">
+          Présentation du projet
+        </p>
+
+        <h2
+          data-fr="Un adressage communal moderne et organisé"
+          data-ar="عنونة بلدية حديثة ومنظمة">
+          Un adressage communal moderne et organisé
+        </h2>
+
+        <p
+          data-fr="Le Plan Communal d’Adressage (PCA) est une solution cartographique développée sous QGIS pour organiser les voies, identifier les constructions et faciliter la gestion des adresses à l’échelle communale."
+          data-ar="المخطط البلدي للعنونة هو حل خرائطي مطوّر باستخدام QGIS لتنظيم الطرق وتحديد المباني وتسهيل تسيير العناوين على مستوى البلدية.">
+          Le Plan Communal d’Adressage (PCA) est une solution cartographique développée sous QGIS pour organiser les voies, identifier les constructions et faciliter la gestion des adresses à l’échelle communale.
+        </p>
+      </div>
+
+      <div class="feature-grid presentation-grid">
+        <article class="feature-card presentation-card">
+          <span class="feature-icon">⌖</span>
+          <h3 data-fr="Une cartographie précise" data-ar="خرائط دقيقة">
+            Une cartographie précise
+          </h3>
+          <p
+            data-fr="Organiser les voies, les équipements et les constructions sur une carte communale."
+            data-ar="تنظيم الطرق والتجهيزات والمباني على خريطة البلدية.">
+            Organiser les voies, les équipements et les constructions sur une carte communale.
+          </p>
+        </article>
+
+        <article class="feature-card presentation-card">
+          <span class="feature-icon">⌘</span>
+          <h3 data-fr="Une gestion simplifiée" data-ar="تسيير مبسّط">
+            Une gestion simplifiée
+          </h3>
+          <p
+            data-fr="Centraliser les données d’adressage et faciliter leur mise à jour."
+            data-ar="تجميع بيانات العنونة وتسهيل تحديثها.">
+            Centraliser les données d’adressage et faciliter leur mise à jour.
+          </p>
+        </article>
+
+        <article class="feature-card presentation-card">
+          <span class="feature-icon">▤</span>
+          <h3 data-fr="Un outil pour les communes" data-ar="أداة لفائدة البلديات">
+            Un outil pour les communes
+          </h3>
+          <p
+            data-fr="Accompagner les collectivités dans la préparation et le suivi de leur plan d’adressage."
+            data-ar="مرافقة الجماعات المحلية في إعداد ومتابعة مخطط العنونة.">
+            Accompagner les collectivités dans la préparation et le suivi de leur plan d’adressage.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FONCTIONNALITES -->
     <section class="section" id="fonctionnalites">
       <div class="section-heading">
-        <p class="eyebrow" data-fr="Un outil au service des communes" data-ar="أداة في خدمة البلديات">Un outil au service des communes</p>
-        <h2 data-fr="Les bases d’un adressage fiable" data-ar="أسس عنونة موثوقة">Les bases d’un adressage fiable</h2>
-        <p data-fr="Une approche cartographique pour organiser l’information communale et faciliter sa mise à jour." data-ar="منهجية خرائطية لتنظيم المعلومات البلدية وتسهيل تحديثها.">Une approche cartographique pour organiser l’information communale et faciliter sa mise à jour.</p>
+        <p class="eyebrow"
+           data-fr="Un outil au service des communes"
+           data-ar="أداة في خدمة البلديات">
+          Un outil au service des communes
+        </p>
+
+        <h2 data-fr="Les bases d’un adressage fiable" data-ar="أسس عنونة موثوقة">
+          Les bases d’un adressage fiable
+        </h2>
+
+        <p
+          data-fr="Une approche cartographique pour organiser l’information communale et faciliter sa mise à jour."
+          data-ar="منهجية خرائطية لتنظيم المعلومات البلدية وتسهيل تحديثها.">
+          Une approche cartographique pour organiser l’information communale et faciliter sa mise à jour.
+        </p>
       </div>
+
       <div class="feature-grid">
-        <article class="feature-card"><span class="feature-icon">⌖</span><h3 data-fr="Localisation précise" data-ar="تحديد دقيق للمواقع">Localisation précise</h3><p data-fr="Positionner les voies, les accès et les objets territoriaux sur une carte." data-ar="تحديد الطرق والمداخل والعناصر الإقليمية على الخريطة.">Positionner les voies, les accès et les objets territoriaux sur une carte.</p></article>
-        <article class="feature-card"><span class="feature-icon">⌘</span><h3 data-fr="Données organisées" data-ar="بيانات منظمة">Données organisées</h3><p data-fr="Structurer les informations d’adressage pour faciliter leur consultation et leur suivi." data-ar="تنظيم معلومات العنونة لتسهيل الاطلاع عليها ومتابعتها.">Structurer les informations d’adressage pour faciliter leur consultation et leur suivi.</p></article>
-        <article class="feature-card"><span class="feature-icon">▤</span><h3 data-fr="Documents et exports" data-ar="الوثائق والتصدير">Documents et exports</h3><p data-fr="Préparer des supports de travail et des exports utiles au suivi communal." data-ar="إعداد وثائق عمل وملفات تصدير مفيدة للمتابعة البلدية.">Préparer des supports de travail et des exports utiles au suivi communal.</p></article>
+        <article class="feature-card">
+          <span class="feature-icon">⌖</span>
+          <h3 data-fr="Localisation précise" data-ar="تحديد دقيق للمواقع">
+            Localisation précise
+          </h3>
+          <p
+            data-fr="Positionner les voies, les accès et les objets territoriaux sur une carte."
+            data-ar="تحديد الطرق والمداخل والعناصر الإقليمية على الخريطة.">
+            Positionner les voies, les accès et les objets territoriaux sur une carte.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">⌘</span>
+          <h3 data-fr="Données organisées" data-ar="بيانات منظمة">
+            Données organisées
+          </h3>
+          <p
+            data-fr="Structurer les informations d’adressage pour faciliter leur consultation et leur suivi."
+            data-ar="تنظيم معلومات العنونة لتسهيل الاطلاع عليها ومتابعتها.">
+            Structurer les informations d’adressage pour faciliter leur consultation et leur suivi.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">▤</span>
+          <h3 data-fr="Documents et exports" data-ar="الوثائق والتصدير">
+            Documents et exports
+          </h3>
+          <p
+            data-fr="Préparer des supports de travail et des exports utiles au suivi communal."
+            data-ar="إعداد وثائق عمل وملفات تصدير مفيدة للمتابعة البلدية.">
+            Préparer des supports de travail et des exports utiles au suivi communal.
+          </p>
+        </article>
       </div>
     </section>
 
+    <!-- DEMARCHE -->
     <section class="process-section" id="demarche">
       <div class="process-copy">
-        <p class="eyebrow" data-fr="Une démarche structurée" data-ar="منهجية منظمة">Une démarche structurée</p>
-        <h2 data-fr="De la connaissance du terrain à une adresse exploitable." data-ar="من معرفة الميدان إلى عنوان قابل للاستعمال.">De la connaissance du terrain à une adresse exploitable.</h2>
-        <p data-fr="Le PCA s’inscrit dans une démarche progressive : inventorier les éléments, organiser les voies, localiser les accès et consolider les données." data-ar="يعتمد المخطط على مراحل متدرجة: جرد العناصر، تنظيم الطرق، تحديد المداخل وتوحيد البيانات.">Le PCA s’inscrit dans une démarche progressive : inventorier les éléments, organiser les voies, localiser les accès et consolider les données.</p>
+        <p class="eyebrow" data-fr="Une démarche structurée" data-ar="منهجية منظمة">
+          Une démarche structurée
+        </p>
+
+        <h2
+          data-fr="De la connaissance du terrain à une adresse exploitable."
+          data-ar="من معرفة الميدان إلى عنوان قابل للاستعمال.">
+          De la connaissance du terrain à une adresse exploitable.
+        </h2>
+
+        <p
+          data-fr="Le PCA s’inscrit dans une démarche progressive : inventorier les éléments, organiser les voies, localiser les accès et consolider les données."
+          data-ar="يعتمد المخطط على مراحل متدرجة: جرد العناصر، تنظيم الطرق، تحديد المداخل وتوحيد البيانات.">
+          Le PCA s’inscrit dans une démarche progressive : inventorier les éléments, organiser les voies, localiser les accès et consolider les données.
+        </p>
       </div>
+
       <ol class="steps">
-        <li><span>01</span><div><strong data-fr="Préparer les données" data-ar="تحضير البيانات">Préparer les données</strong><p data-fr="Rassembler les informations et les couches cartographiques disponibles." data-ar="جمع المعلومات والطبقات الخرائطية المتاحة.">Rassembler les informations et les couches cartographiques disponibles.</p></div></li>
-        <li><span>02</span><div><strong data-fr="Organiser le territoire" data-ar="تنظيم المجال">Organiser le territoire</strong><p data-fr="Structurer les voies, secteurs et éléments d’adressage." data-ar="تنظيم الطرق والقطاعات وعناصر العنونة.">Structurer les voies, secteurs et éléments d’adressage.</p></div></li>
-        <li><span>03</span><div><strong data-fr="Vérifier et exporter" data-ar="التحقق والتصدير">Vérifier et exporter</strong><p data-fr="Contrôler les informations et préparer les livrables nécessaires." data-ar="مراجعة المعلومات وإعداد المخرجات اللازمة.">Contrôler les informations et préparer les livrables nécessaires.</p></div></li>
+        <li>
+          <span>01</span>
+          <div>
+            <strong data-fr="Préparer les données" data-ar="تحضير البيانات">
+              Préparer les données
+            </strong>
+            <p
+              data-fr="Rassembler les informations et les couches cartographiques disponibles."
+              data-ar="جمع المعلومات والطبقات الخرائطية المتاحة.">
+              Rassembler les informations et les couches cartographiques disponibles.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span>02</span>
+          <div>
+            <strong data-fr="Organiser le territoire" data-ar="تنظيم المجال">
+              Organiser le territoire
+            </strong>
+            <p
+              data-fr="Structurer les voies, secteurs et éléments d’adressage."
+              data-ar="تنظيم الطرق والقطاعات وعناصر العنونة.">
+              Structurer les voies, secteurs et éléments d’adressage.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span>03</span>
+          <div>
+            <strong data-fr="Vérifier et exporter" data-ar="التحقق والتصدير">
+              Vérifier et exporter
+            </strong>
+            <p
+              data-fr="Contrôler les informations et préparer les livrables nécessaires."
+              data-ar="مراجعة المعلومات وإعداد المخرجات اللازمة.">
+              Contrôler les informations et préparer les livrables nécessaires.
+            </p>
+          </div>
+        </li>
       </ol>
     </section>
 
+    <!-- RESSOURCES -->
     <section class="resources section" id="ressources">
-      <div><p class="eyebrow" data-fr="Ressources" data-ar="الموارد">Ressources</p><h2 data-fr="Tout pour commencer" data-ar="كل ما يلزم للبدء">Tout pour commencer</h2><p data-fr="Ajoutez ici le guide officiel, les liens de téléchargement et les coordonnées de contact lorsqu’ils seront prêts." data-ar="يمكن إضافة الدليل الرسمي وروابط التنزيل وبيانات الاتصال عند توفرها.">Ajoutez ici le guide officiel, les liens de téléchargement et les coordonnées de contact lorsqu’ils seront prêts.</p></div>
-      <div class="resource-box"><div class="resource-symbol">↗</div><h3 data-fr="Guide PCA" data-ar="دليل المخطط">Guide PCA</h3><p data-fr="Le lien du guide pourra être ajouté ici." data-ar="يمكن إضافة رابط الدليل هنا.">Le lien du guide pourra être ajouté ici.</p><span class="coming-soon" data-fr="Lien à configurer" data-ar="الرابط قيد الإعداد">Lien à configurer</span></div>
+      <div>
+        <p class="eyebrow" data-fr="Ressources" data-ar="الموارد">
+          Ressources
+        </p>
+
+        <h2 data-fr="Tout pour commencer" data-ar="كل ما يلزم للبدء">
+          Tout pour commencer
+        </h2>
+
+        <p
+          data-fr="Retrouvez les ressources utiles pour découvrir le PCA et apprendre à l’utiliser."
+          data-ar="اكتشف الموارد المفيدة للتعرف على المخطط البلدي للعنونة وتعلم كيفية استعماله.">
+          Retrouvez les ressources utiles pour découvrir le PCA et apprendre à l’utiliser.
+        </p>
+      </div>
+
+      <div class="resource-box">
+        <div class="resource-symbol">↗</div>
+        <h3 data-fr="Guide PCA" data-ar="دليل المخطط">Guide PCA</h3>
+
+        <p
+          data-fr="Le guide utilisateur sera disponible ici dès que son lien sera configuré."
+          data-ar="سيكون دليل المستخدم متاحًا هنا بمجرد إعداد رابط التنزيل.">
+          Le guide utilisateur sera disponible ici dès que son lien sera configuré.
+        </p>
+
+        <span class="coming-soon"
+              data-fr="Lien à configurer"
+              data-ar="الرابط قيد الإعداد">
+          Lien à configurer
+        </span>
+      </div>
     </section>
   </main>
-  <footer><img src="logo-pca.png" alt="" class="footer-logo"><p data-fr="PCA — Plan Communal d’Adressage" data-ar="المخطط البلدي للعنونة">PCA — Plan Communal d’Adressage</p><small>© <span id="year"></span> PCA</small></footer>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+    <img src="logo-pca.png" alt="" class="footer-logo">
+    <p data-fr="PCA — Plan Communal d’Adressage"
+       data-ar="المخطط البلدي للعنونة">
+      PCA — Plan Communal d’Adressage
+    </p>
+    <small>© <span id="year"></span> PCA</small>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
